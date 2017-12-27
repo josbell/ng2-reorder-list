@@ -1,0 +1,19 @@
+<li draggable
+	class="list-group-item row" 
+	[dragData]="item" 
+	droppable 
+	[dragOverClass]="'showNext'"
+	(onDrop)="onDrop($event)">
+	  <div class="col-md-7">
+	    <span class="glyphicon glyphicon-align-justify"></span>
+	    <input type="checkbox" value="1">
+	    {{item.name}}
+	  </div>
+	  <div class="col-md-5">
+	    <select class="form-control" name="orderingScheme">
+	      <option value='Asc'>Earliest First</option>
+	      <option value="Desc">Latest First</option>
+	    </select>
+	  </div>
+</li>
+<li class="list-group-item placeholder"></li>

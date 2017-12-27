@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+    margin: 10% auto;
+    padding: 10%
+}
+/* Draggable*/
+
+.drag-border {
+    /*border: #ff525b dashed 2px;*/
+    display: none;
+}
+
+.firstDrag {
+    opacity:0;
+}
+
+.drag-handle {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.drag-handle:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+/* Droppable */
+
+.drag-hint-border {
+    
+}
+
+.placeholder {
+    display: none;
+}
+
+.drag-over {
+
+}
+
+.drag-over-top-border {
+    border-top-color: #fbbc05 !important;; 
+}
+
+.drag-over-bottom-border {
+    border-bottom-color: #fbbc05 !important;;
+}
+
+.drag-transit {
+}
+
+.showNext + .placeholder {
+    background-color: #d3d3d3;
+    display: inherit;
+}
+
+.showFirst #firstPlaceholder{
+    background-color: #d3d3d3;
+    display: inherit;
+}
+.control {    
+}
+
+.list-group-item, .list-group-item:first-child, .list-group-item:last-child {
+    padding: 10px 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+
